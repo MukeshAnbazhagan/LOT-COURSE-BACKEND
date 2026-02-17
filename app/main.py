@@ -7,17 +7,16 @@ import os
 # Load environment variables
 load_dotenv()
 
-# Import route modules
-from routes import auth, dashboard, payments
-# Import new route files (use the exact names I provided)
-from routes.courses import router as courses_router
-from routes.events import router as events_router
-from routes.wishlist_routes import router as wishlist_router
-from routes.home_routes import router as home_router
-from routes.lecture_progress_routes import router as lecture_progress_router
-from routes.admin_routes import router as admin_router
-from routes.faq_agenda_routes import router as faq_agenda_router
-from routes.certificate_routes import router as certificates_router
+from app.routes import auth, dashboard, payments
+from app.routes.courses import router as courses_router
+from app.routes.events import router as events_router
+from app.routes.wishlist_routes import router as wishlist_router
+from app.routes.home_routes import router as home_router
+from app.routes.lecture_progress_routes import router as lecture_progress_router
+from app.routes.admin_routes import router as admin_router
+from app.routes.faq_agenda_routes import router as faq_agenda_router
+from app.routes.certificate_routes import router as certificates_router
+
 
 # Initialize FastAPI app
 app = FastAPI(
