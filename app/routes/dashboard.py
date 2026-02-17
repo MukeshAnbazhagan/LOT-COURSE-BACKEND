@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Depends, HTTPException, status
 from sqlalchemy.orm import Session
-from database import get_db, Enrollment, EventRegistration, Certificate, User
-from security import get_current_user
+from app.database import get_db, Enrollment, EventRegistration, Certificate, User
+from app.security import get_current_user
 
 router = APIRouter(prefix="/api/dashboard", tags=["dashboard"])
 

@@ -1,8 +1,8 @@
 from fastapi import APIRouter, Depends, HTTPException, status, Query
 from sqlalchemy.orm import Session
 from sqlalchemy import text
-from database import get_db
-from security import get_current_user
+from app.database import get_db
+from app.security import get_current_user
 from uuid import uuid4
 from datetime import datetime, timedelta
 from typing import Optional

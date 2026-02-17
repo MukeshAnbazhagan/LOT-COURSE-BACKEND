@@ -1,8 +1,8 @@
 from fastapi import APIRouter, Depends, HTTPException, status
 from sqlalchemy.orm import Session
-from database import get_db, Payment, Course, Event, Enrollment, EventRegistration
+from app.database import get_db, Payment, Course, Event, Enrollment, EventRegistration
 from schemas.payments import PaymentCreateRequest, PaymentVerifyRequest, PaymentInitResponse
-from security import get_current_user
+from app.security import get_current_user
 import razorpay
 import os
 import uuid
