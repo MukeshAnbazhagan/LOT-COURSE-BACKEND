@@ -15,6 +15,5 @@ stripe
 PyJWT
 httpx
 psycopg2-binary
-cors-fastapi
 twilio
 Pillow
